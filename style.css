@@ -35,7 +35,7 @@ body {
 header,
 main,
 footer {
-    width: 1600px;
+    max-width: 100%;
 }
 
 h1 {
@@ -148,7 +148,7 @@ main .section3 {
     height: 872px;
 }
 
-main .section3 .row1, 
+main .section3 .row1,
 main .section3 .row2 {
     display: flex;
     margin-bottom: 20px;
@@ -175,6 +175,8 @@ main .section3 .animal-card img {
 main .section3 .animal-card .content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: auto;
     margin: 10px 15px;
 }
 
@@ -187,4 +189,13 @@ main .section3 .animal-card .content .icon img {
     width: 100%;
     object-fit: cover;
     height: auto;
+}
+
+main .section3 .button {
+    width: 298px;
+    padding: 15px 5px;
+    background-color: #FE9013;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
 }

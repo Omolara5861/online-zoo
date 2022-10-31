@@ -43,7 +43,6 @@ h1 {
     font-weight: 700;
     font-size: 114px;
     line-height: 80%;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -62,11 +61,15 @@ h3 {
 
 h4 {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 120%;
-color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
 }
 
 .subtitle {
@@ -121,22 +124,146 @@ color: #000000;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-}
 
 /* Header Styles */
 header {
-    height: 80px;
+    /* height: 80px; */
     left: 0px;
     top: 0px;
     background: #000000;
     backdrop-filter: blur(2px);
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-left: 20px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    max-width: 85px;
+    max-height: 47px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin-right: 20px;
+    padding: 5px 0;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 40%;
+    width: 14%;
+    left: 12.5%;
+    top: 44%;
+    background-image: url(assets/icons/bamboo.svg);
+    color: #FFFFFF;
+}
+
+.logo h1 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.designed-by a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+}
+
+a.active {
+    color:  #F9804B;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links li {
+    margin-right: 30px;
+}
+
+.nav-item {
+    color: #fff;
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+    padding: 10px;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in;
+}
+
+.nav-item:hover {
+    color:  #F9804B;
 }
 
 /* Main Content Styles */
 /*  */
+
+main .section1-bg {
+    margin: 0 auto;
+    max-width: 100%;
+    background: #283035 url('assets/images/Giant\ Panda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+}
+
+main .section1-bg h2 {
+        margin: 74px 0 0 72px;
+        font-weight: 700;
+        font-size: 106.496px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 500.31px;
+        height: 400px;
+        color: #FFFFFF;
+}
+main .container {
+    width: 1275px;
+    height: 478px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.ellipse {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+}
+
+.watch-btn-div{
+    width: 972px;
+    height: 190px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 main .section2 {
     position: relative;
@@ -232,15 +359,15 @@ main .section3 .animal-card .content .icon img {
 
 main .section4 {
     height: 1004px;
-background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-opacity: 0.9;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
 }
 
 main .section4 .container {
-height: 835px;
-background: rgba(253, 253, 255, 0.52);
-backdrop-filter: blur(2px);
-border-radius: 20px;
+    height: 835px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
 }
 
 main .section4 .container .row {
@@ -282,14 +409,13 @@ main .section4 .container .widget p {
 
 .testimonial-card {
     position: relative;
-	border: 1px solid transparent;
+    border: 1px solid transparent;
     box-sizing: border-box;
     padding: 15px 20px;
-width: 298px;
-height: 391px;
-background: #F1F3F2;
-border-radius: 20px;
-margin-right: 35px;
+    width: 298px;
+    height: 391px;
+    background: #F1F3F2;
+    border-radius: 20px;
 }
 
 .testimonial-card:after {
@@ -303,6 +429,32 @@ margin-right: 35px;
     z-index: -1;
     border-radius: 20px;
 }
+
 .testimonial-card .content p {
     color: #bdbdbd;
+}
+
+.slider_container {
+    width: 52%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.slider_testimonials {
+    width: 100%;
+    height: 7px;
+    -webkit-appearance: none;
+    appearance: none;
+    background:  #F5F7F6;
+    border-radius: 5px;
+    border: 1px solid #fec1b1;
+}
+
+.slider_testimonials::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background:#fd8f12;
+    width: 19%;
+    height: 7px;
+    cursor: pointer;
+    border-radius: 5px;
 }

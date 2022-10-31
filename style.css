@@ -31,6 +31,12 @@ body {
     line-height: 140%;
 }
 
+header,
+main,
+footer {
+    width: 1600px;
+}
+
 h1 {
     font-style: normal;
     font-weight: 700;
@@ -72,4 +78,8 @@ p {
     font-size: 16px;
     line-height: 140%;
     text-transform: uppercase;
+}
+
+.container {
+    width: 1160px;
 }

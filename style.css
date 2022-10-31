@@ -83,3 +83,13 @@ p {
 .container {
     width: 1160px;
 }
+
+/* Header Styles */
+header {
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    backdrop-filter: blur(2px);
+}

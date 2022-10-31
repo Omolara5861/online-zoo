@@ -87,6 +87,31 @@ h3 {
     margin: auto;
 }
 
+/* Buttons Style */
+.btn-rounded {
+    width: 298px;
+    padding: 15px 5px;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+}
+
+.btn-square {
+    width: 298px;
+    padding: 15px 5px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
+
+.btn-light {
+    background-color: #FE9013;
+}
+
+.btn-dark {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
 /* Header Styles */
 header {
     height: 80px;
@@ -191,11 +216,52 @@ main .section3 .animal-card .content .icon img {
     height: auto;
 }
 
-main .section3 .button {
-    width: 298px;
-    padding: 15px 5px;
-    background-color: #FE9013;
-    border-radius: 25px;
-    color: #fff;
-    border: none;
+main .section4 {
+    height: 1004px;
+background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+opacity: 0.9;
+}
+
+main .section4 .container {
+height: 835px;
+background: rgba(253, 253, 255, 0.52);
+backdrop-filter: blur(2px);
+border-radius: 20px;
+}
+
+main .section4 .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+main .section4 .container .widget {
+    width: 168px;
+    height: 244px;
+    border-radius: 5px;
+}
+
+main .section4 .container .arrow {
+    width: 168px;
+    height: 168px;
+    background: url(./assets/icons/arrow.svg) no-repeat center center;
+}
+
+main .section4 .container .widget div {
+    width: 168px;
+    height: 168px;
+    border-radius: 5px;
+    border: 1px solid #FE9013;
+    background: #fff url(./assets/icons/pay.svg) no-repeat center center;
+}
+
+main .section4 .container .widget .zoo {
+    background: #fff url(./assets/icons/zoo.svg) no-repeat center center;
+}
+
+main .section4 .container .widget .monkey {
+    background: #fff url(./assets/icons/monkey.svg) no-repeat center center;
+}
+
+main .section4 .container .widget p {
+    margin-top: 25px;
 }

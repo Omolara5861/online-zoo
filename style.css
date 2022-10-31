@@ -60,6 +60,15 @@ h3 {
     line-height: 130%;
 }
 
+h4 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+color: #000000;
+}
+
 .subtitle {
     font-style: normal;
     font-weight: 400;
@@ -110,6 +119,11 @@ h3 {
 
 .btn-dark {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 /* Header Styles */
@@ -264,4 +278,31 @@ main .section4 .container .widget .monkey {
 
 main .section4 .container .widget p {
     margin-top: 25px;
+}
+
+.testimonial-card {
+    position: relative;
+	border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 15px 20px;
+width: 298px;
+height: 391px;
+background: #F1F3F2;
+border-radius: 20px;
+margin-right: 35px;
+}
+
+.testimonial-card:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: linear-gradient(to bottom right, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    z-index: -1;
+    border-radius: 20px;
+}
+.testimonial-card .content p {
+    color: #bdbdbd;
 }

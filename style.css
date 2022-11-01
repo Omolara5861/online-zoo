@@ -118,10 +118,20 @@ a {
 
 .btn-light {
     background-color: #FE9013;
+    transition: all 0.6 ease-out;
+}
+
+.btn-light:hover {
+    background-color:  #F9804B;
 }
 
 .btn-dark {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    transition: all 0.6 ease-out;
+}
+.btn-dark:hover {
+    background: linear-gradient(90deg, #FE9013 19.49%, #F9804B  101.44%);
+    transform: scale(1.1);
 }
 
 /* Header Styles */
@@ -417,6 +427,7 @@ main .slider_block .btn {
     top: 404px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
+    transition: all 0.2s linear 0s;
 }
 
 .right-ellipse:before {
@@ -431,6 +442,10 @@ main .slider_block .btn {
     z-index: 2;
 }
 
+.right-ellipse:hover {
+    margin-right: -20px;
+    cursor: pointer;
+}
 
 .left-ellipse {
     position: absolute;
@@ -440,6 +455,7 @@ main .slider_block .btn {
     top: 404px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
+    transition: all 0.2s linear 0s;
 }
 
 .left-ellipse:before {
@@ -452,6 +468,11 @@ main .slider_block .btn {
     left: 20px;
     top: 26px;
     z-index: 2;
+}
+
+.left-ellipse:hover {
+    margin-left: -20px;
+    cursor: pointer;
 }
 
 main .section4 {

@@ -236,12 +236,8 @@ a.active {
 
 main .section1-bg {
     margin: 0 auto;
-    max-width: 100%;
-    background: #283035 url('assets/images/Giant\ Panda.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+    background: #283035 url('assets/images/Giant\ Panda.png') no-repeat center/cover;
+    height: 780px;
 }
 
 main .section1-bg h2 {
@@ -379,11 +375,11 @@ main .animal-caption {
     margin-right: 0.7%;
     padding-bottom: 3.4%;
     margin-top: -2%;
-    transition: all 0.2s linear 0s;
+    transition: all 0.7s linear 0s;
 }
 
 main .animals-container .animal-card img {
-    transition: all 0.2s linear 0s;
+    transition: all 0.7s linear 0s;
 }
 
 main .animals-container:hover .animal-card img {
@@ -690,12 +686,12 @@ footer input[type="submit"] {
     color: var(--green);
     border: none;
     outline: none;
-    transition: all o.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 footer input[type="submit"]:hover {
-    background-color: transparent;
-    border: 1px solid #f1f3f2;
+    background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%);
+    color: #f1f3f2;
 
 }
 

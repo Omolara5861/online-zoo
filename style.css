@@ -379,11 +379,11 @@ main .animal-caption {
     margin-right: 0.7%;
     padding-bottom: 3.4%;
     margin-top: -2%;
-    transition: all 0.2s linear 0s;
+    transition: all 0.7s linear 0s;
 }
 
 main .animals-container .animal-card img {
-    transition: all 0.2s linear 0s;
+    transition: all 0.7s linear 0s;
 }
 
 main .animals-container:hover .animal-card img {

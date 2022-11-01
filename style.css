@@ -632,6 +632,14 @@ footer {
     padding: 50px 0;
 }
 
+footer .socials a {
+    transition: all 0.2s linear 0s;
+}
+
+footer .socials a:hover {
+    margin-left: 15px;
+}
+
 footer .subtitle {
     color: #fff;
     margin-bottom: 10px;

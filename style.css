@@ -690,12 +690,12 @@ footer input[type="submit"] {
     color: var(--green);
     border: none;
     outline: none;
-    transition: all o.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 footer input[type="submit"]:hover {
-    background-color: transparent;
-    border: 1px solid #f1f3f2;
+    background-color: #F9804B;
+    color: #f1f3f2;
 
 }
 

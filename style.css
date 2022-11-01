@@ -533,9 +533,14 @@ main .section4 .container .widget p {
     margin-top: 25px;
 }
 
-main .section5 {
-    margin-top: 150px;
-    margin-bottom: 165px;
+main .section5-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 181px;
+    background-image: url(assets/images/leav_foto.png);
+    background-repeat: no-repeat;
+    background-position: right 126%;
 }
 
 main .testimonial-list {

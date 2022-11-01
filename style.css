@@ -195,6 +195,11 @@ nav {
     font-size: 16px;
     line-height: 140%;
     color: #fff;
+    transition: all 0.2s linear 0s;
+}
+
+.designed-by a:hover {
+    color: #F9804B;
 }
 
 a.active {
@@ -219,7 +224,7 @@ a.active {
     padding: 14px;
     text-decoration: none;
     padding: 10px;
-    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in;
+    transition: all 0.2s linear 0s;
 }
 
 .nav-item:hover {

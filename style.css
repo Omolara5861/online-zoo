@@ -227,7 +227,7 @@ main .section1-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 main .section1-bg h2 {
@@ -409,25 +409,22 @@ main .section4 .container .widget p {
 
 .testimonial-card {
     position: relative;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    padding: 15px 20px;
-    width: 298px;
-    height: 391px;
-    background: #F1F3F2;
+    width: calc((1160px - 30px * 3) / 4);
     border-radius: 20px;
+    padding: 15px;
+    background-color: #f1f3f2;
 }
 
 .testimonial-card:after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    bottom: -5px;
-    left: -5px;
-    right: -5px;
-    background: linear-gradient(to bottom right, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    z-index: -1;
+    content: "";
+    background-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
     border-radius: 20px;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    position: absolute;
+    z-index: -1;
 }
 
 .testimonial-card .content p {
@@ -457,4 +454,76 @@ main .section4 .container .widget p {
     height: 7px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+footer {
+    background-color: #111115;
+    padding: 50px 0;
+}
+
+footer .subtitle {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer input[type="email"] {
+    width: 228px;
+    padding: 7px 5px;
+    background: transparent;
+    color: #bdbdbd;
+    border: none;
+    border: 1px solid #F9804B;
+    outline: none;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+border-radius: 2px;
+margin-right: 5px;
+}
+
+footer input[type="submit"] {
+    width: 129px;
+    padding: 11px 0;
+    background: #F1F3F2;
+
+border: 1px solid var(--green);
+border-radius: 5px;
+    color: var(--green);
+    border: none;
+    outline: none;
+    transition: all o.5s ease-in-out;
+}
+
+footer input[type="submit"]:hover {
+    background-color: transparent;
+    border: 1px solid #f1f3f2;
+
+}
+
+footer .content2 {
+    margin: 40px 0;
+}
+
+footer .content3 .socials {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .designed-by,
+footer nav {
+    align-self: flex-end;
+}
+
+footer nav {
+    margin-left: 150px;
+}
+
+footer .designed-by a{
+    font-weight: 100;
+font-size: 16px;
+line-height: 130%;
+    color: #ffffff94;;
 }

@@ -690,7 +690,7 @@ footer input[type="submit"] {
 }
 
 footer input[type="submit"]:hover {
-    background-color: #F9804B;
+    background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%);
     color: #f1f3f2;
 
 }

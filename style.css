@@ -124,7 +124,6 @@ a {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
-
 /* Header Styles */
 header {
     /* height: 80px; */
@@ -241,7 +240,7 @@ main .section1-bg h2 {
         height: 400px;
         color: #FFFFFF;
 }
-main .container {
+main .section1-bg .container {
     width: 1275px;
     height: 478px;
     display: flex;

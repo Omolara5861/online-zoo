@@ -237,6 +237,7 @@ a.active {
 main .section1-bg {
     margin: 0 auto;
     background: #283035 url('assets/images/Giant\ Panda.png') no-repeat center/cover;
+    height: 780px;
 }
 
 main .section1-bg h2 {

@@ -70,6 +70,7 @@ h4 {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .subtitle {
@@ -133,7 +134,6 @@ a {
     background: linear-gradient(90deg, #FE9013 19.49%, #F9804B  101.44%);
     transform: scale(1.1);
 }
-
 /* Header Styles */
 header {
     /* height: 80px; */
@@ -195,6 +195,11 @@ nav {
     font-size: 16px;
     line-height: 140%;
     color: #fff;
+    transition: all 0.2s linear 0s;
+}
+
+.designed-by a:hover {
+    color: #F9804B;
 }
 
 a.active {
@@ -219,7 +224,7 @@ a.active {
     padding: 14px;
     text-decoration: none;
     padding: 10px;
-    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in;
+    transition: all 0.2s linear 0s;
 }
 
 .nav-item:hover {
@@ -625,6 +630,14 @@ main .slider_testimonials::-webkit-slider-thumb {
 footer {
     background-color: #111115;
     padding: 50px 0;
+}
+
+footer .socials a {
+    transition: all 0.2s linear 0s;
+}
+
+footer .socials a:hover {
+    margin-left: 15px;
 }
 
 footer .subtitle {

@@ -188,7 +188,7 @@ nav {
 }
 
 a.active {
-    color:  #F9804B;
+    color: #F9804B;
 }
 
 .navbar-links {
@@ -213,7 +213,7 @@ a.active {
 }
 
 .nav-item:hover {
-    color:  #F9804B;
+    color: #F9804B;
 }
 
 /* Main Content Styles */
@@ -230,16 +230,17 @@ main .section1-bg {
 }
 
 main .section1-bg h2 {
-        margin: 74px 0 0 72px;
-        font-weight: 700;
-        font-size: 106.496px;
-        line-height: 75%;
-        text-align: center;
-        text-transform: uppercase;
-        width: 500.31px;
-        height: 400px;
-        color: #FFFFFF;
+    margin: 74px 0 0 72px;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 500.31px;
+    height: 400px;
+    color: #FFFFFF;
 }
+
 main .section1-bg .container {
     width: 1275px;
     height: 478px;
@@ -255,7 +256,7 @@ main .section1-bg .container {
     border-radius: 50%;
 }
 
-.watch-btn-div{
+.watch-btn-div {
     width: 972px;
     height: 190px;
     margin: auto;
@@ -314,6 +315,30 @@ main .section2 .flower-bg {
 main .section3 {
     height: 872px;
     margin-top: 180px;
+    margin: 0 auto;
+}
+
+main .section3 .slider-ellipse {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    align-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+main .section3 .ellipse-1 {
+    position: absolute;
+    left: 400px;
+    display: flex;
+    justify-content: center;
+}
+main .section3 .ellipse-2 {
+    position: absolute;
+    right: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 main .section3 .row1,
@@ -363,6 +388,7 @@ main .section4 {
     height: 1004px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     opacity: 0.9;
+    margin-top: 100px;
 }
 
 main .section4 .container {
@@ -370,6 +396,30 @@ main .section4 .container {
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 40px;
+}
+
+main .section4 .container .subtitle {
+    margin: 45px 0;
+    color: #333B41;
+    ;
+}
+main .section4 .container h4{
+    font-weight: 600;
+    color: #333B41;
+    margin-bottom: 10px;
+}
+
+main .section4 .container p {
+    width: 870px;
+    margin-bottom: 40px;
+}
+
+main .section4 .container p a{
+    color: #333B41;
+    border-bottom: 2px solid #F9804B;
 }
 
 main .section4 .container .row {
@@ -381,6 +431,10 @@ main .section4 .container .widget {
     width: 168px;
     height: 244px;
     border-radius: 5px;
+}
+
+main .section4 .container .widget p {
+    width: 100%;
 }
 
 main .section4 .container .arrow {
@@ -444,14 +498,14 @@ main .section4 .container .widget p {
     height: 7px;
     -webkit-appearance: none;
     appearance: none;
-    background:  #F5F7F6;
+    background: #F5F7F6;
     border-radius: 5px;
     border: 1px solid #fec1b1;
 }
 
 .slider_testimonials::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background:#fd8f12;
+    background: #fd8f12;
     width: 19%;
     height: 7px;
     cursor: pointer;
@@ -477,12 +531,12 @@ footer input[type="email"] {
     border: 1px solid #F9804B;
     outline: none;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-border-radius: 2px;
-margin-right: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    border-radius: 2px;
+    margin-right: 5px;
 }
 
 footer input[type="submit"] {
@@ -490,8 +544,8 @@ footer input[type="submit"] {
     padding: 11px 0;
     background: #F1F3F2;
 
-border: 1px solid var(--green);
-border-radius: 5px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
     color: var(--green);
     border: none;
     outline: none;
@@ -523,9 +577,10 @@ footer nav {
     margin-left: 150px;
 }
 
-footer .designed-by a{
+footer .designed-by a {
     font-weight: 100;
-font-size: 16px;
-line-height: 130%;
-    color: #ffffff94;;
+    font-size: 16px;
+    line-height: 130%;
+    color: #ffffff94;
+    ;
 }

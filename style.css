@@ -363,6 +363,7 @@ main .animals-container {
     border: 0.5px solid #F9804B;
     background-color: #fff;
     overflow: hidden;
+    transition: all 0.2s linear 0s;
 }
 
 main .animal-card {
@@ -372,15 +373,32 @@ main .animal-card {
 }
 
 
-
-main .animal_caption {
+main .animal-caption {
     background-color: #FFFFFF;
     margin-left: 0.7%;
     margin-right: 0.7%;
     padding-bottom: 3.4%;
     margin-top: -2%;
+    transition: all 0.2s linear 0s;
 }
 
+main .animals-container .animal-card img {
+    transition: all 0.2s linear 0s;
+}
+
+main .animals-container:hover .animal-card img {
+    transform: scale(1.1);
+}
+
+main .animals-container:hover .animal-caption {
+    margin-top: -350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+main .animals-container:hover .animal-caption h4{
+    color: #fff;
+}
 main .slider_block .btn {
     margin-left: 3%;
     margin-top: 2.5%;

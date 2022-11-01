@@ -236,12 +236,7 @@ a.active {
 
 main .section1-bg {
     margin: 0 auto;
-    max-width: 100%;
-    background: #283035 url('assets/images/Giant\ Panda.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+    background: #283035 url('assets/images/Giant\ Panda.png') no-repeat center/cover;
 }
 
 main .section1-bg h2 {

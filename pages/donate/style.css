@@ -1,4 +1,23 @@
+main {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
 
+main .content {
+    color: #fff;
+}
+
+main .content h3 {
+    padding: 40px 0 10px;
+}
+
+main .content p {
+    font-weight: 500;
+}
+
+main .content  ~ h3 {
+    color: #FE9013;
+    padding: 40px 0 60px;
+}
 
 input[type='submit'] {
     background: #F1F3F2 !important;
@@ -10,3 +29,4 @@ input[type="submit"]:hover {
     background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%) !important;
     color: #f1f3f2 !important;
 }
+

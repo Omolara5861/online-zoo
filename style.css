@@ -119,20 +119,21 @@ a {
 
 .btn-light {
     background-color: #FE9013;
-    transition: all 0.6 ease-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-light:hover {
     background-color:  #F9804B;
+    transform: scale(1.05);
 }
 
 .btn-dark {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    transition: all 0.6 ease-out;
+    transition: all 0.5s ease-in-out;
 }
 .btn-dark:hover {
     background: linear-gradient(90deg, #FE9013 19.49%, #F9804B  101.44%);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /* Header Styles */
 header {
@@ -689,9 +690,13 @@ footer input[type="submit"] {
     transition: all 0.5s ease-in-out;
 }
 
+
 footer input[type="submit"]:hover {
     background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%);
     color: #f1f3f2;
+    border: 2px solid transparent;
+    transform: scale(1.05);
+    will-change: transform;
 
 }
 

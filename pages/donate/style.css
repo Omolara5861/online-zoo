@@ -1,0 +1,12 @@
+
+
+input[type='submit'] {
+    background: #F1F3F2 !important;
+    color: #333B41 !important;
+    border: 1px solid #333B41 !important;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%) !important;
+    color: #f1f3f2 !important;
+}

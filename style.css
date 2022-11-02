@@ -664,7 +664,8 @@ footer .subtitle {
 
 footer input[type="email"] {
     width: 228px;
-    padding: 7px 5px;
+    height: 42px;
+    padding: 0 10px;
     background: transparent;
     color: #bdbdbd;
     border: none;
@@ -681,9 +682,8 @@ footer input[type="email"] {
 
 footer input[type="submit"] {
     width: 129px;
-    padding: 11px 0;
+    height: 42px;
     background: #F1F3F2;
-
     border: 1px solid var(--green);
     border-radius: 5px;
     color: var(--green);

@@ -103,7 +103,7 @@ a {
 /* Buttons Style */
 .btn-rounded {
     width: 298px;
-    padding: 15px 5px;
+    height: 54px;
     border-radius: 25px;
     color: #fff;
     border: none;
@@ -111,7 +111,7 @@ a {
 
 .btn-square {
     width: 298px;
-    padding: 15px 5px;
+    height: 54px;
     border-radius: 5px;
     color: #fff;
     border: none;
@@ -123,7 +123,7 @@ a {
 }
 
 .btn-light:hover {
-    background-color:  #F9804B;
+    background-color: #F9804B;
     transform: scale(1.05);
 }
 
@@ -131,10 +131,12 @@ a {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     transition: all 0.5s ease-in-out;
 }
+
 .btn-dark:hover {
-    background: linear-gradient(90deg, #FE9013 19.49%, #F9804B  101.44%);
+    background: linear-gradient(90deg, #FE9013 19.49%, #F9804B 101.44%);
     transform: scale(1.05);
 }
+
 /* Header Styles */
 header {
     /* height: 80px; */
@@ -226,6 +228,7 @@ a.active {
     text-decoration: none;
     padding: 10px;
     transition: all 0.2s linear 0s;
+    font-weight: 500;
 }
 
 .nav-item:hover {
@@ -236,45 +239,43 @@ a.active {
 /*  */
 
 main .section1-bg {
-    margin: 0 auto;
     background: #283035 url('assets/images/Giant\ Panda.png') no-repeat center/cover;
     height: 780px;
 }
 
-main .section1-bg h2 {
-    margin: 74px 0 0 72px;
+main .ellipse-container {
+    position: relative;
+    height: 100%;
+}
+
+main .ellipse {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+}
+
+main .title {
+    position: absolute;
+    width: 500.31px;
+    height: 400px;
+    left: 57%;
+    top: 14%;
     font-weight: 700;
     font-size: 106.496px;
     line-height: 75%;
     text-align: center;
     text-transform: uppercase;
-    width: 500.31px;
-    height: 400px;
-    color: #FFFFFF;
+    color: #fff;
 }
 
-main .section1-bg .container {
-    width: 1275px;
-    height: 478px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.ellipse {
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    width: 465px;
-    height: 465px;
-    border-radius: 50%;
-}
-
-.watch-btn-div {
-    width: 972px;
-    height: 190px;
-    margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+main .watch-btn {
+    position: absolute;
+    left: 66%;
+    top: 73%;
 }
 
 main .section2 {
@@ -393,9 +394,10 @@ main .animals-container:hover .animal-caption {
     color: #fff;
 }
 
-main .animals-container:hover .animal-caption h4{
+main .animals-container:hover .animal-caption h4 {
     color: #fff;
 }
+
 main .slider_block .btn {
     margin-left: 3%;
     margin-top: 2.5%;
@@ -726,5 +728,3 @@ footer .designed-by a {
     color: #ffffff94;
     ;
 }
-
-

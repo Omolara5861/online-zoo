@@ -649,6 +649,10 @@ footer {
     padding: 50px 0;
 }
 
+footer .socials {
+    width: 100px;
+}
+
 footer .socials a {
     transition: all 0.2s linear 0s;
 }
@@ -664,12 +668,13 @@ footer .subtitle {
 
 footer input[type="email"] {
     width: 228px;
-    padding: 7px 5px;
     background: transparent;
     color: #bdbdbd;
     border: none;
     border: 1px solid #F9804B;
     outline: none;
+    height: 42px;
+    padding: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -681,9 +686,8 @@ footer input[type="email"] {
 
 footer input[type="submit"] {
     width: 129px;
-    padding: 11px 0;
     background: #F1F3F2;
-
+    height: 42px;
     border: 1px solid var(--green);
     border-radius: 5px;
     color: var(--green);

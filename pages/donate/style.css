@@ -48,10 +48,10 @@ main .wrapper .panda-widget {
     align-items: center;
 }
 
-main .pick-container .wrapper .panda-widget span {
+main .pick-container .wrapper .panda-widget .no-of-pandas {
     font-weight: 500;
     font-size: 72px;
-    line-height: 58px; 
+    line-height: 80%;
     text-align: center;
     text-transform: uppercase;
     color: #000;

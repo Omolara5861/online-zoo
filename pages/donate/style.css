@@ -41,6 +41,27 @@ main .pick-container .wrapper h2 {
     text-align: center;
 }
 
+main .wrapper .panda-widget {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .pick-container .wrapper .panda-widget span {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 58px; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+main .pick-container .wrapper .panda-widget .x-icon {
+    margin-left: 11px;
+    margin-right: 60px;
+}
+
 input[type='submit'] {
     background: #F1F3F2 !important;
     color: #333B41 !important;

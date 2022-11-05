@@ -314,7 +314,7 @@ main section {
 }
 
 main .section2_wrapper {
-    max-width: 100%;
+    max-width: 1600px;
     background-image: url(assets/images/flower_foto1.png);
     background-repeat: no-repeat;
     background-position: right 11%;
@@ -324,7 +324,7 @@ main .section2_wrapper {
 }
 
 main .animals_wrapper {
-    max-width: 100%;
+    max-width: 1600px;
     z-index: 1;
     background-image: url(assets/images/palm_foto.png), url(assets/images/strelitzia\ 1.png);
     background-repeat: no-repeat, no-repeat;
@@ -587,7 +587,7 @@ main .section4 .container .widget p {
 
 main .section5-wrapper {
     position: relative;
-    /* width: 100%; */
+    width: 1600px;
     padding-top: 140px;
     padding-bottom: 180px;
     background-image: url(assets/images/leav_foto.png);

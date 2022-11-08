@@ -138,7 +138,7 @@ a {
 
 .btn-light:hover {
     background-color: #F9804B;
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
 }
 
 .btn-dark {
@@ -148,7 +148,7 @@ a {
 
 .btn-dark:hover {
     background: linear-gradient(90deg, #FE9013 19.49%, #F9804B 101.44%);
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
 }
 
 /* Header Styles */

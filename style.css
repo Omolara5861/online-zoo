@@ -151,6 +151,11 @@ a {
     transform: scale(1.05);
 }
 
+input:focus, input:focus::placeholder {
+    border-color: var(--green)!important;
+    color: var(--green) !important;
+}
+
 /* Header Styles */
 header {
     /* height: 80px; */
@@ -739,10 +744,10 @@ footer input[type="submit"] {
 }
 
 footer input[type="submit"]:active {
-    border: 1px solid var(--green);
-    color: var(--green);
+    border: 1px solid var(--green) !important;
+    color: var(--green) !important;
+    background:#F1F3F2 !important;
 }
-
 
 footer input[type="submit"]:hover {
     background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B 101.44%);
@@ -752,6 +757,7 @@ footer input[type="submit"]:hover {
     will-change: transform;
 
 }
+
 
 footer .content2 {
     margin-top: 36px;

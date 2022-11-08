@@ -1,3 +1,17 @@
+/* Fieldset default style reset */
+fieldset {
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
 main {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
@@ -39,13 +53,19 @@ main .pick-container .wrapper {
 main .pick-container .wrapper h2 {
     color: #FE9013;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 main .wrapper .panda-widget {
-    margin-top: 60px;
+    margin: 60px 0 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main .pick-container .wrapper .panda-widget .amt-of-days {
+    height: 58px;
+    margin-bottom: 11px;
 }
 
 main .pick-container .wrapper .panda-widget .no-of-pandas {
@@ -60,6 +80,129 @@ main .pick-container .wrapper .panda-widget .no-of-pandas {
 main .pick-container .wrapper .panda-widget .x-icon {
     margin-left: 11px;
     margin-right: 60px;
+}
+
+main .pick-container .wrapper .progress-bar {
+    margin: 10px 0 6px;
+    width: 976px;
+    height: 40px;
+}
+
+main .pick-container .wrapper .progress-bg {
+    height: 27px;
+    margin-inline: auto;
+    background-color: #404950;
+    position: relative;
+    border-radius: 2px;
+    margin-bottom: 9.8rem;
+}
+
+main .pick-container .wrapper .progress-bg .line {
+    position: absolute;
+    width: 915px;
+    height: 2px;
+    background-color: #72828E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container {
+    position: absolute;
+    width: 927px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label {
+    position: absolute;
+    top: 330%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--black-blue-color);
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label span {
+    margin-right: 0.2rem;
+    font-size: 22px;
+}
+
+input,
+label {
+    cursor: pointer;
+}
+
+.rollers-icon {
+    height: 1rem;
+    width: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #FFEE2E;
+    border-radius: 50%;
+    position: relative;
+}
+
+.rollers-icon::after {
+    content: '';
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.rollers-icon::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.rollers-icon:focus-visible {
+    outline-offset: 0;
+}
+
+.rollers-icon:hover::before {
+    border: 2px solid #FE9013;
+}
+
+.rollers-icon:hover::after {
+    border: 2px solid #FE9013;
+}
+
+.rollers-icon:checked::before {
+    border: 2px solid #FE9013;
+}
+
+.rollers-icon:checked::after {
+    border: 2px solid #FE9013;
+}
+
+.rollers-icon:checked+label,
+.rollers-icon:hover+label {
+    color: #FE9013 !important;
 }
 
 input[type='submit'] {

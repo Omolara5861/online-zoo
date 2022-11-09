@@ -44,21 +44,6 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-input:focus {
-    border: 1px solid var(--green);
-    color: var(--green);
-}
-
-.default {
-    border: 1px solid var(--gray);
-    color: #000;
-}
-
-.mistake {
-    border: 1px solid var(--red);
-    color: var(--red);
-}
-
 main {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
@@ -181,9 +166,11 @@ main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box 
     line-height: 36px;
     text-transform: uppercase;
     color: var(--black-blue-color);
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
 }
 
 main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label span {
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
     margin-right: 0.2rem;
     font-size: 22px;
 }
@@ -201,6 +188,7 @@ label {
     background-color: #FFEE2E;
     border-radius: 50%;
     position: relative;
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
 }
 
 .rollers-icon::after {
@@ -213,6 +201,7 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
 }
 
 .rollers-icon::before {
@@ -225,6 +214,7 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
 }
 
 .rollers-icon:focus-visible {
@@ -273,6 +263,7 @@ main .pick-container .wrapper .another-amount input {
     border: 1px solid #929699;
     border-radius: 2px;
     outline: none;
+    background: transparent;
 }
 
 main .pick-container .wrapper .another-amount img {
@@ -282,8 +273,21 @@ main .pick-container .wrapper .another-amount img {
 }
 
 main .pick-container .wrapper .notes input[type="radio"] {
-    margin-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    transition: 0.2s all linear;
+    outline: none;
 }
+main .pick-container .wrapper .notes input[type="radio"]:checked {
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
 
 main .pick-container .wrapper button {
     margin: 31px 0 30.02px;

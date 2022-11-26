@@ -1,0 +1,49 @@
+.container {
+    max-width: 1000px;
+}
+
+.navbar-links {
+    gap: 48px;
+}
+
+header .container {
+    padding: 14px 30px;
+}
+
+main .container {
+    padding-bottom: 30px;
+}
+
+main .content h3 {
+    padding-bottom: 30px;
+}
+
+main .content~h3 {
+    padding-bottom: 40px;
+}
+
+main .pick-container {
+    height: 918px;
+    /* padding: 20px 47px 46px; */
+}
+
+main .pick-container .wrapper {
+    width: 940px;
+}
+
+main .pick-container .wrapper h2 {
+    margin-bottom: 20px;
+}
+
+main .pick-container .wrapper .progress-bar {
+    margin: 20px 0 36px;
+    width: 810px;
+}
+
+main .pick-container .wrapper .progress-bg .line {
+    width: 785px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container {
+    width: 830px;
+}

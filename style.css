@@ -344,7 +344,7 @@ main .section2_wrapper {
 main .animals_wrapper {
     max-width: 100%;
     z-index: 1;
-    background-image: url(assets/images/palm_foto.png), url(assets/images/strelitzia\ 1.png);
+    background-image: url(assets/images/palm_foto.png), url(assets/images/strelitzia.png);
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
 }
@@ -467,7 +467,7 @@ main .slider_block .btn {
     width: 62px;
     height: 62px;
     right: -80px;
-    top: 404px;
+    top: 46%;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
     transition: all 0.2s linear 0s;
@@ -495,7 +495,7 @@ main .slider_block .btn {
     width: 62px;
     height: 62px;
     left: -82px;
-    top: 404px;
+    top: 46%;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
     transition: all 0.2s linear 0s;
@@ -523,6 +523,10 @@ main .slider_block .btn {
     background: var(--green);
 }
 
+.choose-btn {
+    text-align: center; margin-top: 80px; padding-bottom: 100px;
+}
+
 main .section4 {
     height: 1004px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -537,7 +541,6 @@ main .section4 .container {
     backdrop-filter: blur(2px);
     border-radius: 20px;
     padding-top: 41px;
-    padding-left: px;
     padding-bottom: 59px;
 }
 
@@ -787,4 +790,10 @@ footer .designed-by a {
     line-height: 130%;
     color: #ffffff94;
     ;
+}
+
+@media (max-width: 1610px) {
+    main .section1-bg {
+        background-position-y: 0px;
+    }
 }

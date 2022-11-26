@@ -1,0 +1,117 @@
+body {
+    background-color: blue;
+}
+.container {
+    max-width: 1000px;
+}
+
+.navbar-links {
+    gap: 48px;
+}
+
+header .container {
+    padding: 14px 30px;
+}
+
+main .section1-bg {
+    position: relative;
+    z-index: -1;
+    padding-top: 66px;
+    height: 584px;
+}
+
+.watch-you .ellipse-container .title-block {
+    width: 400.25px;
+    height: 414px;
+}
+
+.watch-you .ellipse-container .title-block .title {
+    font-size: 85px;
+    height: 320px;
+}
+
+.watch-you .ellipse-container .title-block .title::before {
+    width: 367px;
+    height: 367px;
+    border-radius: 367px;
+
+}
+
+main .section2 {
+    height: 427px;
+    width: 940px;
+}
+
+main .section2 .img-container {
+    width: 455px;
+    height: 408px;
+}
+
+main .section2 .section-content {
+    width: 454px;
+    margin-left: 31px;
+}
+
+main .section2_wrapper  {
+    background: none;
+}
+
+main .animals_wrapper {
+    background-image: url(assets/images/palm_foto1.png), url(assets/images/strelitzia\ 1.png);
+
+}
+
+main .row1 {
+    margin-bottom: 92px;
+}
+
+main .animals-container {
+    width: 295px;
+    height: 354px;
+}
+
+main .animal-card {
+    height: 295px;
+}
+
+.right-ellipse {
+    right: 35%;
+}
+
+.left-ellipse {
+    left: 35%;
+}
+
+.choose-btn {
+    padding-bottom: 140px;
+}
+
+main .section4 {
+    height: 876px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+main .section4 .container {
+    height: 796px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 48px;
+}
+
+main .section5-wrapper {
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+main .testimonial-item {
+    width: 294px;
+}
+
+main .testimonial-item:last-child  {
+    display: none;
+}
+
+main .slider_container {
+    margin-bottom: 52px;
+}

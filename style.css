@@ -567,6 +567,19 @@ main .section4 .container p a {
     border-bottom: 2px solid #F9804B;
 }
 
+main .section4 .container .heading{
+    margin-left: 350px; color: #FE9013;
+}
+
+main .section4 .container .content{
+    margin-left: 99px;
+}
+
+main .section4 .container .subtitle-container{
+    margin-left: 475px;
+    margin-bottom: 40px;
+}
+
 main .section4 .container .row {
     display: flex;
     margin-left: 198px;
@@ -582,6 +595,8 @@ main .section4 .container .widget {
 main .section4 .container .widget p {
     width: 100%;
 }
+
+
 
 main .section4 .container .arrow {
     width: 69px;

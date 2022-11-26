@@ -71,6 +71,10 @@ main .animal-card {
     height: 295px;
 }
 
+main .animals-container:hover .animal-caption {
+    margin-top: -290px;
+}
+
 .right-ellipse {
     right: 35%;
 }

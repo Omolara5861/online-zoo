@@ -169,12 +169,18 @@ main .testimonial-item .text {
     background: #F9804B;
 }
 
+main .slider_container  {
+    display: none;
+}
+
+
 main .testimonial-item:nth-child(2) {
     margin: 0;
 }
 
 main .section5-wrapper .btn-container {
     text-align: center;
+    margin-top: 40px;
 }
 
 footer .desktop-footer {
@@ -185,3 +191,28 @@ footer .small-screen-footer {
     display: block;
 }
 
+footer .small-screen-footer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    margin-bottom: 20px;
+}
+footer .small-screen-footer .content1,
+footer .small-screen-footer .content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .small-screen-footer .content1 .logo {
+    margin-bottom: 32px;
+}
+
+
+footer .small-screen-footer .content2 .navbar-links {
+    justify-content: flex-start;
+        gap: 37px;
+}

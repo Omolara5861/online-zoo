@@ -150,6 +150,23 @@ main .testimonial-list {
 main .testimonial-item {
     width: 100%;
     height: 109px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main .testimonial-item .text {
+    cursor: pointer;
+    overflow: scroll;
+    max-height: 90%;
+}
+
+.text::-webkit-scrollbar {
+    width: 2.5px;
+    margin-right: 8px;
+}
+
+.text::-webkit-scrollbar-thumb {
+    background: #F9804B;
 }
 
 main .testimonial-item:nth-child(2) {
@@ -158,5 +175,13 @@ main .testimonial-item:nth-child(2) {
 
 main .section5-wrapper .btn-container {
     text-align: center;
+}
+
+footer .desktop-footer {
+    display: none;
+}
+
+footer .small-screen-footer {
+    display: block;
 }
 

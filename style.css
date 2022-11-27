@@ -714,6 +714,10 @@ footer {
     padding-bottom: 50px;
 }
 
+footer .small-screen-footer {
+    display: none;
+}
+
 footer .socials {
     width: 100px;
 }

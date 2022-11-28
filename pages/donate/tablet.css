@@ -1,0 +1,103 @@
+.container {
+    max-width: 600px;
+}
+
+main .container {
+    padding-top: 30px;
+    padding-bottom: 46px;
+}
+
+main .section1-bg {
+    height: 335px;
+}
+
+main .content h3 {
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+main .content~h3 {
+    padding: 30px 0;
+}
+
+main .pick-container {
+    height: 918px;
+    padding: 0;
+}
+
+main .pick-container .wrapper {
+    width: 600px;
+    height: 868px;
+}
+
+main .pick-container .wrapper h2 {
+    margin-bottom: 20px;
+}
+main .pick-container .wrapper .subtitle {
+    text-align: center;
+}
+
+main .wrapper .panda-widget {
+    margin: 50px 0px 41px;
+}
+
+main .wrapper .amt {
+    margin-left: 10px;
+}
+
+main .pick-container .wrapper .another-amount {
+    width: 180px;
+    height: 42px;
+    margin: 50px 0 31px;
+}
+
+main .pick-container .wrapper button {
+    margin-top: 30px;
+}
+
+main .pick-container .wrapper .progress-bar {
+    display: none;
+}
+
+main .pick-container .wrapper .progress-bg .line {
+    width: 785px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container {
+    width: 830px;
+}
+
+
+footer .desktop-footer {
+    display: none;
+}
+
+footer .small-screen-footer {
+    display: block;
+}
+
+footer .small-screen-footer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    margin-bottom: 20px;
+}
+footer .small-screen-footer .content1,
+footer .small-screen-footer .content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .small-screen-footer .content1 .logo {
+    margin-bottom: 32px;
+}
+
+
+footer .small-screen-footer .content2 .navbar-links {
+    justify-content: flex-start;
+        gap: 37px;
+}

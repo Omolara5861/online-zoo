@@ -52,6 +52,10 @@ main .container {
     padding: 40px 0 180px;
 }
 
+main .section1-bg {
+    height: 390px;
+}
+
 main .content {
     color: #fff;
 }
@@ -268,8 +272,8 @@ main .pick-container .wrapper .another-amount input {
 
 main .pick-container .wrapper .another-amount img {
     position: absolute;
-    top: 17px;
-    left: 248px;
+    top: 30%;
+    left: 90%;
 }
 
 main .pick-container .wrapper .notes input[type="radio"] {
@@ -282,6 +286,11 @@ main .pick-container .wrapper .notes input[type="radio"] {
     border: 1px solid #FE9013;
     transition: 0.2s all linear;
     outline: none;
+}
+
+main .pick-container .wrapper .notes label{
+    margin-left: 10px;
+
 }
 main .pick-container .wrapper .notes input[type="radio"]:checked {
     background: var(--green);

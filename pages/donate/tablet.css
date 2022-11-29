@@ -55,16 +55,21 @@ main .pick-container .wrapper button {
     margin-top: 30px;
 }
 
-main .pick-container .wrapper .progress-bar {
-    display: none;
+main .pick-container .wrapper .progress-bg {
+    margin: 20px 0 36px;
+    width: 600px;
 }
 
 main .pick-container .wrapper .progress-bg .line {
-    width: 785px;
+    width: 524px;
 }
 
 main .pick-container .wrapper .progress-bg .donate-amount-container {
-    width: 830px;
+    width: 524px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container  .hide {
+    display: none;
 }
 
 

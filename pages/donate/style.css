@@ -125,12 +125,13 @@ main .pick-container .wrapper .progress-bar {
 }
 
 main .pick-container .wrapper .progress-bg {
+    width: 976px;
     height: 27px;
     margin-inline: auto;
     background-color: #404950;
     position: relative;
     border-radius: 2px;
-    margin-bottom: 9.8rem;
+    /* margin-bottom: 9.8rem; */
 }
 
 main .pick-container .wrapper .progress-bg .line {
@@ -175,7 +176,6 @@ main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box 
 
 main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label span {
     transition: all 0.5s cubic-bezier(.4,.25,.3,1);
-    margin-right: 0.2rem;
     font-size: 22px;
 }
 
@@ -210,8 +210,8 @@ label {
 
 .rollers-icon::before {
     content: '';
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 2px solid transparent;
     position: absolute;
     top: 50%;

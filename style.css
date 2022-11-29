@@ -165,12 +165,107 @@ header {
     backdrop-filter: blur(2px);
 }
 
-header .container {
+header .desktop-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px 0;
     height: 80px;
+}
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 18px;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #FFF;
+	margin: 3px 0px;
+	transition: 0.4s;
+}
+
+.hamburger .bar:hover, .hamburger:hover:after, .hamburger:hover:before {
+    background-color: #F9804B;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 329px;
+	display: block;
+	z-index: 98;
+	background-color: #fff;
+	padding: 10px;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav .nav-item{
+    color: #000;
+}
+
+header .mobile-container {
+		display: none;
+}
+
+header.hamburger {
+	display: none;
+}
+
+header .mobile-container .logo {
+    border: none;
+    max-width: 46.86px;
+    max-height: 29.03px;
+}
+header .mobile-container .logo div{
+    font-size: 12.29px;
+}
+
+.mobile-nav .logo {
+    border-color: #FE9013;
+    margin-bottom: 30.4px;
+    max-width: 65.6px;
+    max-height: 41.6px;
+}
+
+.mobile-nav .logo::before {
+    background-color: #FE9013;
+}
+
+.mobile-nav .logo div {
+    color: #FE9013;
+    font-size: 15.21px;
+}
+
+.mobile-nav .nav-item {
+    margin-bottom: 15px;
 }
 
 .logo {
@@ -194,8 +289,8 @@ header .container {
     height: 20.98px;
     left: 12.5%;
     top: 44%;
-    background-image: url(assets/icons/bamboo.svg);
-    color: #FFFFFF;
+    -webkit-mask-image: url(assets/icons/bamboo.svg);
+    background-color: #FFFFFF;
 }
 
 .logo h1,
@@ -233,6 +328,10 @@ a.active {
     display: flex;
     justify-content: center;
     gap: 58px;
+}
+
+li {
+    list-style: none;
 }
 
 .nav-item {
@@ -626,6 +725,10 @@ main .section4 .container .widget p {
     margin-top: 30px;
 }
 
+main .section4 .container .btn-container{
+    text-align: center; margin-top: 60px;
+}
+
 main .section5-wrapper {
     position: relative;
     width: 100%;
@@ -681,6 +784,10 @@ main .testimonial-item::before {
 
 main .testimonial-item .content p {
     color: #bdbdbd;
+}
+
+.show {
+    display: none;
 }
 
 main .slider_container {

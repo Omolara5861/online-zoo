@@ -35,7 +35,7 @@ main .pick-container .wrapper h2 {
     margin-bottom: 20px;
 }
 
-main .pick-container .wrapper .progress-bar {
+main .pick-container .wrapper .progress-bg {
     margin: 20px 0 36px;
     width: 810px;
 }
@@ -45,5 +45,9 @@ main .pick-container .wrapper .progress-bg .line {
 }
 
 main .pick-container .wrapper .progress-bg .donate-amount-container {
-    width: 830px;
+    width: 785px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box-5000 {
+    display: none;
 }

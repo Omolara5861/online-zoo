@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 1400px)" href="small_destop.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <title>Online Zoo | Donate</title>
 </head>
 
@@ -17,28 +18,56 @@
     <!-- Header Starts Here -->
     <header>
         <div class="container">
-            <div style="display: flex; align-items: center;">
-                <div class="logo">
-                    <a class="header_logo_link" href="../../index.html">
-                        <h1>PetStory online</h1>
-                    </a>
+            <div class="desktop-container">
+                <div style="display: flex; align-items: center;">
+                    <div class="logo">
+                        <a class="header_logo_link" href="../../index.html">
+                            <h1>PetStory online</h1>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a class="nav-item" href="../../index.html">About</a></li>
+                            <li><a class="nav-item" href="#">Map</a></li>
+                            <li><a class="nav-item" href="#">Zoos</a></li>
+                            <li><a class="nav-item active" href="/pages/donate/index.html">Donate</a></li>
+                            <li><a class="nav-item" href="#projects">Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="navbar-links">
-                        <li><a class="nav-item" href="../../index.html">About</a></li>
-                        <li><a class="nav-item" href="#">Map</a></li>
-                        <li><a class="nav-item" href="#">Zoos</a></li>
-                        <li><a class="nav-item active" href="/">Donate</a></li>
-                        <li><a class="nav-item" href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
+                <div class="designed-by">
+                    <a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                        target="_blank"> Designed by ©</a>
+                </div>
             </div>
-            <div class="designed-by">
-                <a class="header_designed" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                    target="_blank"> Designed by ©</a>
+        <div class="mobile-container">
+            <div class="logo">
+                <a class="header_logo_link" href="../../index.html">
+                    <div>PetStory online</div>
+                </a>
             </div>
+            <button class="hamburger">
+                    <div class="bar"></div>
+            </button>
         </div>
+    </div>
     </header>
+    <nav class="mobile-nav">
+        <div class="logo">
+            <a class="header_logo_link" href="../../index.html">
+                <div>PetStory online</div>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-item" href="../../index.html">About</a></li>
+            <li><a class="nav-item" href="#">Map</a></li>
+            <li><a class="nav-item" href="#">Zoos</a></li>
+            <li><a class="nav-item" href="/pages/donate/index.html">Donate</a></li>
+            <li><a class="nav-item" href="#projects">Contact Us</a></li>
+            <li><a class="nav-item" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                target="_blank"> Designed by ©</a></li>
+        </ul>
+    </nav>
     <!-- Header Ends Here -->
 
     <!-- Main Contents Starts Here -->
@@ -67,7 +96,7 @@
                             <div class="amt-of-days">
                                 <p class="no-of-pandas">4</p>
                             </div>
-                            <p>Panda diet for the day.</p>
+                            <p class="diet">Panda diet for the day.</p>
                         </div>
                         <img src="../../assets/icons/x_icon.svg" alt="x icon" class="x-icon">
                         <img src="../../assets/icons/panda_widget1.svg" alt="A big panda Icon">
@@ -78,21 +107,21 @@
                             <div class="progress-bg">
                                 <div class="line"></div>
                                 <div class="donate-amount-container">
-                                    <div class="donate-box">
+                                    <div class="donate-box donate-box-5000 ">
                                         <input class="rollers-icon" type="radio" id="5000" name="money" value="5000">
                                         <label class="left" for="5000"><span>$</span>5000</label>
                                     </div>
-                                    <div class="donate-box">
-                                        <input class="rollers-icon" type="radio" id="2000" name="money" value="2000">
+                                    <div class="donate-box hide">
+                                        <input class="rollers-icon" type="radio" id="2000" name="money" value="2000" >
                                         <label class="left" for="2000"><span>$</span>2000</label>
                                     </div>
-                                    <div class="donate-box">
-                                        <input class="rollers-icon" type="radio" id="1000" checked name="money"
-                                            value="1000">
+                                    <div class="donate-box hide">
+                                        <input class="rollers-icon" type="radio" id="1000" name="money"
+                                            value="1000" checked>
                                         <label class="active" for="1000"><span>$</span>1000</label>
                                     </div>
                                     <div class="donate-box">
-                                        <input class="rollers-icon" type="radio" id="500" name="money" value="500">
+                                        <input class="rollers-icon" type="radio" id="500"  name="money" value="500">
                                         <label class="" for="500"><span>$</span>500</label>
                                     </div>
                                     <div class="donate-box">
@@ -195,9 +224,15 @@
                 <div class="content1">
                     <div>
                         <div class="logo">
-                            <a class="header_logo_link" href="index.html">
+                            <a class="header_logo_link" href="../../index.html">
                                 <div>PetStory online</div>
                             </a>
+                        </div>
+                        <div class="social-icons1">
+                            <a href=""><div class="icon"><img src="../../assets/icons/facebook1.svg" alt="facebook"></div></a>
+                            <a href=""><div class="icon"><img src="../../assets/icons/twitter (1).svg" alt="twitter"></div> </a>
+                            <a href=""><div class="icon"><img src="../../assets/icons/instagram (1).svg" alt="instagram"></div></a>
+                            <a href=""><div class="icon"><img src="../../assets/icons/youtube (1).svg" alt="youtube"></div></a>
                         </div>
                         <div >
                             <button class="btn btn-square btn-dark">
@@ -233,6 +268,9 @@
         </div>
     </footer>
     <!-- Footer Ends Here -->
+
+    <script src="../../script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

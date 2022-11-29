@@ -2,6 +2,29 @@
     max-width: 600px;
 }
 
+header .container {
+    padding: 5px 20.28px;
+}
+
+header .desktop-container {
+    display: none;
+}
+
+header .mobile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.hamburger {
+display: block;
+}
+
+.mobile-nav .nav-item:hover{
+    color: #F9804B;
+}
+
+
+
 main .container {
     padding-top: 30px;
     padding-bottom: 46px;
@@ -55,16 +78,21 @@ main .pick-container .wrapper button {
     margin-top: 30px;
 }
 
-main .pick-container .wrapper .progress-bar {
-    display: none;
+main .pick-container .wrapper .progress-bg {
+    margin: 20px 0 36px;
+    width: 600px;
 }
 
 main .pick-container .wrapper .progress-bg .line {
-    width: 785px;
+    width: 524px;
 }
 
 main .pick-container .wrapper .progress-bg .donate-amount-container {
-    width: 830px;
+    width: 524px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container  .hide {
+    display: none;
 }
 
 
@@ -74,6 +102,10 @@ footer .desktop-footer {
 
 footer .small-screen-footer {
     display: block;
+}
+
+footer .small-screen-footer .social-icons1 {
+    display: none;
 }
 
 footer .small-screen-footer .icon {

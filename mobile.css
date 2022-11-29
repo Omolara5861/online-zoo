@@ -99,6 +99,7 @@ main .animals_wrapper {
 main .section4 {
     padding-top: 40px;
     padding-bottom: 60px;
+    height: 1084px;
 }
 
 main .section4 .container {
@@ -145,32 +146,42 @@ main .section4 .container .subtitle-container {
 }
 
 main .section4 .container .row {
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    gap: unset;
 }
 
-main .section4 .container .widget {
-    width: 168px;
-    height: 222px;
-    margin-bottom: 20px;
+
+main .section4 .container .widget p {
+    margin-top: 10px;
 }
 
 main .section4 .container .arrow {
     margin: 0;
     position: relative;
+    width: 63.12px;
 }
 
 main .section4 .container .arrow img {
     content: url(assets/images/arrow1.png);
     position: absolute;
-    
+    top: -85px;
+    left: 123px;
 }
+
+main .section4 .container .btn-container{
+    margin-top: 30px;
+}
+
 
 main .section5-wrapper {
     background-image: url(assets/images/leav_foto2.png);
     padding-top: 60px;
-    padding-bottom: 92px;
-    background-position: right 113%;
+    padding-bottom: 60px;
+    background-position: right 105%;
 }
 
 main .testimonial-list {
@@ -179,11 +190,14 @@ main .testimonial-list {
 }
 
 main .testimonial-item {
-    width: 100%;
-    height: 109px;
+    width: 299px;
 }
 
-main .testimonial-item .text {
+.show {
+    display: inline;
+}
+
+main .testimonial-item .text, .hide {
     display: none;
 }
 
@@ -197,8 +211,8 @@ main .testimonial-item:nth-child(2) {
 }
 
 main .section5-wrapper .btn-container {
-    text-align: center;
-    margin-top: 40px;
+    text-align: unset;
+    margin-top: 30px;
 }
 
 footer .desktop-footer {

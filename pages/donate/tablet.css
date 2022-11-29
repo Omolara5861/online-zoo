@@ -19,6 +19,11 @@ header.hamburger {
 display: block;
 }
 
+.mobile-nav .nav-item:hover{
+    color: #F9804B;
+}
+
+
 
 main .container {
     padding-top: 30px;

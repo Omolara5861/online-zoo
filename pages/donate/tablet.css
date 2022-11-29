@@ -81,6 +81,10 @@ footer .small-screen-footer {
     display: block;
 }
 
+footer .small-screen-footer .social-icons1 {
+    display: none;
+}
+
 footer .small-screen-footer .icon {
     display: flex;
     justify-content: center;

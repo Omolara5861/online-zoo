@@ -1,0 +1,176 @@
+.container {
+    max-width: 320px;
+}
+
+main .section1-bg {
+    height: 187px;
+}
+
+main .content~h3 {
+    font-size: 24px;
+}
+
+main .pick-container {
+    width: 307px;
+    height: 591px;
+    padding: 0;
+}
+
+main .pick-container .wrapper {
+    width: 307px;
+    height: 551.23px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+main .pick-container .wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.diet {
+    font-size: 9.02px;
+    line-height: 12.6px;
+}
+main .pick-container .wrapper .subtitle {
+    font-size: 16px;
+}
+
+main .wrapper .panda-widget {
+    margin: 10.280px 0px 0;
+}
+
+main .pick-container .wrapper .panda-widget .amt-of-days {
+    height: 32.71px;
+    margin-bottom: 6.2px;
+}
+
+main .pick-container .wrapper .panda-widget .no-of-pandas {
+    font-size: 40.6px;
+    line-height: 32.48px;
+}
+
+main .pick-container .wrapper .panda-widget .x-icon {
+    margin-left: 11px;
+    margin-right: 36.09px;
+}
+
+main .pick-container .wrapper .panda-widget img {
+    content: url(../../assets/images/x_icon.png);
+}
+main .pick-container .wrapper .panda-widget img:last-child {
+    content: url(../../assets/images/panda.png);
+}
+
+
+main .pick-container .wrapper .another-amount {
+    margin: 25px 0 15px;
+}
+
+main .pick-container .wrapper button {
+    margin-top: 30px;
+}
+
+main .pick-container .wrapper .progress-bg {
+    margin: 20px 0 36px;
+    width: 307px;
+    height: 20px;
+}
+
+main .pick-container .wrapper .progress-bg .line {
+    width: 262px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container {
+    width: 262px;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label {
+    font-size: 13px;
+    line-height: 18.2px;
+    font-weight: bold;
+}
+
+main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box label span {
+    transition: all 0.5s cubic-bezier(.4,.25,.3,1);
+    font-size: 10px;
+}
+
+input,
+label {
+    cursor: pointer;
+}
+
+.rollers-icon {
+    height: 5px;
+    width: 5px;
+}
+
+.rollers-icon::after {
+    content: '';
+    width: 11.48px;
+    height: 11.48px;
+    border: 1px solid transparent;
+}
+
+.rollers-icon::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer .small-screen-footer .social-icons {
+    display: none;
+}
+
+footer .small-screen-footer .social-icons1 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+footer .small-screen-footer .content1,
+footer .small-screen-footer .content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+footer .small-screen-footer .content1 .logo {
+    position: relative;
+    display: unset;
+    border: none;
+    max-width: 128px;
+    max-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin-right: 0;
+}
+
+footer .small-screen-footer .content1 .logo::before {
+    content: '';
+    left: 53.5%;
+    top: 2px;
+    background-image: url(../../assets/icons/bamboo.svg);
+    color: #FFFFFF;
+}
+
+
+footer .small-screen-footer .content2 nav {
+    order: 1;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+footer .small-screen-footer .content2 .navbar-links {
+    gap: 30px;
+}

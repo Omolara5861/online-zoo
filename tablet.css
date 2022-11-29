@@ -1,6 +1,22 @@
 .container {
     max-width: 600px;
 }
+header .container {
+    padding: 5px 20.28px;
+}
+
+header .desktop-container {
+    display: none;
+}
+
+header .mobile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.hamburger {
+display: block;
+}
 
 main .section1-bg {
     position: static;
@@ -177,10 +193,6 @@ footer .small-screen-footer {
     display: block;
 }
 
-footer .small-screen-footer .social-icons1 {
-    display: none;
-}
-
 footer .small-screen-footer .icon {
     display: flex;
     justify-content: center;
@@ -191,7 +203,6 @@ footer .small-screen-footer .icon {
     background: rgba(196, 196, 196, 0.5);
     margin-bottom: 20px;
 }
-
 footer .small-screen-footer .content1,
 footer .small-screen-footer .content2 {
     display: flex;
@@ -199,7 +210,7 @@ footer .small-screen-footer .content2 {
 }
 
 footer .small-screen-footer .content1 .logo {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 

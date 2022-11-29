@@ -2,6 +2,24 @@
     max-width: 600px;
 }
 
+header .container {
+    padding: 5px 20.28px;
+}
+
+header .desktop-container {
+    display: none;
+}
+
+header .mobile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.hamburger {
+display: block;
+}
+
+
 main .container {
     padding-top: 30px;
     padding-bottom: 46px;

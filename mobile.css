@@ -215,37 +215,57 @@ main .section5-wrapper .btn-container {
     margin-top: 30px;
 }
 
-footer .desktop-footer {
+footer {
+    padding: 20px 0;
+}
+
+footer .small-screen-footer .social-icons {
     display: none;
 }
 
-footer .small-screen-footer {
-    display: block;
-}
-
-footer .small-screen-footer .icon {
+footer .small-screen-footer .social-icons1 {
     display: flex;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: rgba(196, 196, 196, 0.5);
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 footer .small-screen-footer .content1,
 footer .small-screen-footer .content2 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
+
 
 footer .small-screen-footer .content1 .logo {
-    margin-bottom: 32px;
+    position: relative;
+    display: unset;
+    border: none;
+    max-width: 128px;
+    max-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    margin-right: 0;
+}
+
+footer .small-screen-footer .content1 .logo::before {
+    content: '';
+    left: 53.5%;
+    top: 2px;
+    background-image: url(assets/icons/bamboo.svg);
+    color: #FFFFFF;
 }
 
 
+footer .small-screen-footer .content2 nav {
+    order: 1;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
 footer .small-screen-footer .content2 .navbar-links {
-    justify-content: flex-start;
-    gap: 37px;
+    gap: 30px;
 }

@@ -221,6 +221,7 @@ header .desktop-container {
 	background-color: #fff;
 	padding: 10px;
 	transition: 0.4s;
+    margin-top: 39px;
 }
 
 .mobile-nav.is-active {

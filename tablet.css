@@ -1,3 +1,11 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
 .container {
     max-width: 600px;
 }
@@ -45,7 +53,7 @@ main .section1-bg {
     height: 237.6px;
     border-radius: 237.6px;
     left: -13px;
-    top: -54px;
+    top: -20px;
 }
 
 .watch-you .ellipse-container .title-block  .btn{

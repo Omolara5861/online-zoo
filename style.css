@@ -908,6 +908,10 @@ footer .content3 .socials{
     align-self: flex-end;
 }
 
+footer .socials-content {
+    display: flex;
+}
+
 footer .desktop-footer nav {
     margin-left: 298px;
 }

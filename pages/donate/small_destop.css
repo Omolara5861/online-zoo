@@ -1,13 +1,9 @@
 .container {
-    max-width: 1000px;
+    max-width: 940px;
 }
 
 .navbar-links {
     gap: 48px;
-}
-
-header .container {
-    padding: 14px 30px;
 }
 
 main .container {
@@ -24,15 +20,16 @@ main .content~h3 {
 
 main .pick-container {
     height: 918px;
-    /* padding: 20px 47px 46px; */
+    padding: 20px 47px 46px;
 }
 
 main .pick-container .wrapper {
     width: 940px;
+    padding: 0px;
 }
 
-main .pick-container .wrapper h2 {
-    margin-bottom: 20px;
+main .pick-container .wrapper .progress-bar {
+    height: auto;
 }
 
 main .pick-container .wrapper .progress-bg {
@@ -51,3 +48,19 @@ main .pick-container .wrapper .progress-bg .donate-amount-container {
 main .pick-container .wrapper .progress-bg .donate-amount-container .donate-box-5000 {
     display: none;
 }
+
+main .pick-container .wrapper .form-footer-content {
+    justify-content: unset;
+    align-items: unset;
+    position: absolute;
+    left: 34%;
+}
+
+main .pick-container .wrapper .another-amount {
+    margin-left: 15px;
+    }
+
+footer .desktop-footer nav {
+    margin-left: 125px;
+}
+

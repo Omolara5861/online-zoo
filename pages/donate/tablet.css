@@ -3,10 +3,7 @@
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: sticky;
     z-index: 99;
 }
 
@@ -102,6 +99,18 @@ main .pick-container .wrapper .progress-bg .donate-amount-container {
 main .pick-container .wrapper .progress-bg .donate-amount-container  .hide {
     display: none;
 }
+
+main .pick-container .wrapper .form-footer-content {
+    justify-content: center;
+    align-items: center;
+    position: unset;
+    left: unset;
+}
+
+main .pick-container .wrapper .another-amount {
+    margin-left: unset;
+    }
+
 
 
 footer .desktop-footer {

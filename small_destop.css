@@ -7,14 +7,21 @@
 }
 
 header .container {
-    padding: 14px 30px;
+    padding: 0 30px;
+}
+
+main .container {
+    max-width: 940px;
+}
+footer .container {
+    max-width: 939px;
 }
 
 main .section1-bg {
     position: relative;
     z-index: -1;
-    padding-top: 66px;
     height: 584px;
+    padding-bottom: 0;
 }
 
 .watch-you .ellipse-container .title-block {
@@ -25,37 +32,51 @@ main .section1-bg {
 .watch-you .ellipse-container .title-block .title {
     font-size: 85px;
     height: 320px;
+    left: -60px;
+    top: -45px;
+
 }
 
 .watch-you .ellipse-container .title-block .title::before {
     width: 367px;
     height: 367px;
     border-radius: 367px;
+    left: -55px;
+    top: -55px;
 
 }
 
-main .section2 {
+.watch-you .ellipse-container .title-block button {
+    position: absolute;
+    top: 76.5%;
+    left: -5px;
+}
+
+main .section2_wrapper .container {
     height: 427px;
-    width: 940px;
+    max-width: 940px;
 }
 
-main .section2 .img-container {
+main .section2_wrapper .section2 .img-container {
     width: 455px;
     height: 408px;
+    background: url(assets/images/bamboo-cap1.png);
 }
 
-main .section2 .section-content {
+main .section2_wrapper .section2 .section-content {
     width: 454px;
     margin-left: 31px;
+    margin-top: -10px;
 }
 
 main .section2_wrapper  {
     background: none;
+    margin-top: -110px;
 }
 
 main .animals_wrapper {
     background-image: url(assets/images/palm_foto1.png), url(assets/images/strelitzia\ 1.png);
-
+    margin-top: -49px;
 }
 
 main .row1 {
@@ -76,15 +97,16 @@ main .animals-container:hover .animal-caption {
 }
 
 .right-ellipse {
-    right: 35%;
+    right: 34.2%;
 }
 
 .left-ellipse {
-    left: 35%;
+    left: 34.5%;
 }
 
 .choose-btn {
     padding-bottom: 140px;
+    margin-top: 10px;
 }
 
 main .section4 {
@@ -103,6 +125,8 @@ main .section4 .container {
 main .section5-wrapper {
     padding-top: 100px;
     padding-bottom: 140px;
+    background-image: url(assets/images/leav_foto3.png);
+    background-position: right 116%
 }
 
 main .testimonial-item {
@@ -114,5 +138,18 @@ main .testimonial-item:last-child  {
 }
 
 main .slider_container {
-    margin-bottom: 52px;
+    width: 42%;
+    margin-bottom: 42px;
+}
+
+main .testimonial-list {
+    margin-top: -17px;
+}
+
+main .slider_testimonials {
+    width: 390px;
+}
+
+footer .socials-content {
+    display: block;
 }

@@ -1,14 +1,5 @@
-const amountChecked = document.getElementById('100');
-const defaultAmountChecked = document.getElementById('1000');
+const anotherAmoutInput = document.getElementById("amount-input");
 
-const smallDevice = window.matchMedia("(max-width: 900px)");
+let amount;
+anotherAmoutInput.value = amount
 
-smallDevice.addListener(handleDeviceChange);
-
-function handleDeviceChange(e) {
-  if (e.matches) amountChecked.checked = true;
-  else defaultAmountChecked.checked = true;
-}
-
-// Run it initially
-handleDeviceChange(smallDevice);

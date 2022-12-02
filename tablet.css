@@ -6,6 +6,10 @@ header {
     z-index: 99;
 }
 
+main .container {
+    max-width: 600px;
+}
+
 .container {
     max-width: 600px;
 }
@@ -45,6 +49,8 @@ main .section1-bg {
     font-size: 54.2894px;
     width: 255.64px;
     height: 204.38px;
+    left: 3px;
+    top: 5px;
 }
 
 
@@ -58,6 +64,10 @@ main .section1-bg {
 
 .watch-you .ellipse-container .title-block  .btn{
     align-self: end;
+}
+
+.watch-you .ellipse-container .title-block button {
+    position: unset;
 }
 
 main .section2 {
@@ -75,6 +85,7 @@ main .section2_wrapper  {
     background-position: right 0;
     padding-top: 60px;
     padding-bottom: 130px;
+    margin-top: 0;
 }
 
 main .row1 .animals-container:last-child,

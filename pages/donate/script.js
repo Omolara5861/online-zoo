@@ -19,6 +19,7 @@ anotherAmount.addEventListener('input', updateCheckedAmount);
 function updateCheckedAmount() {
     for (let amount of donatedAmount) {
         if (anotherAmount.value === amount.id) amount.checked = true;
+        else amount.checked = false;
     }
 }
 updateCheckedAmount();

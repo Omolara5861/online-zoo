@@ -111,6 +111,21 @@ a {
     ;
 }
 
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.6);
+    z-index: 4;
+    display:none;
+}
+
+.popup.active .overlay {
+    display:block;
+}
+
 .btn-rounded:active,
 .btn-square:active,
 .btn-light:active,

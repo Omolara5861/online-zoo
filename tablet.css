@@ -79,6 +79,12 @@ main .section2 .img-container {
     display: none;
 }
 
+main .section2_wrapper .section2 .section-content {
+    margin-left: 0;
+}
+
+
+
 main .section2_wrapper  {
     background-image: url(assets/images/flower_foto.png);
     background-repeat: no-repeat;

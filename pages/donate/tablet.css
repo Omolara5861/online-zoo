@@ -3,8 +3,10 @@
 }
 
 header {
-    position: sticky;
     z-index: 99;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 header .container {
@@ -49,13 +51,14 @@ main .content~h3 {
 }
 
 main .pick-container {
+    overflow: hidden;
     height: 918px;
     padding: 0;
 }
 
 main .pick-container .wrapper {
     width: 600px;
-    height: 868px;
+    height: auto;
 }
 
 main .pick-container .wrapper h2 {

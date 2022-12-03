@@ -2,10 +2,10 @@
     max-width: 600px;
 }
 
-header {
+/* header {
     position: sticky;
     z-index: 99;
-}
+} */
 
 header .container {
     padding: 5px 20.28px;
@@ -49,13 +49,14 @@ main .content~h3 {
 }
 
 main .pick-container {
+    overflow: hidden;
     height: 918px;
     padding: 0;
 }
 
 main .pick-container .wrapper {
     width: 600px;
-    height: 868px;
+    height: auto;
 }
 
 main .pick-container .wrapper h2 {

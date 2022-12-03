@@ -1,5 +1,12 @@
-const anotherAmoutInput = document.getElementById("amount-input");
+const donateForm = document.getElementById("donate-form");
+const donatedAmount = donateForm.money;
 
-let amount;
-anotherAmoutInput.value = amount
+donateForm.anotherAmount.value = 100;
 
+donateForm.addEventListener('change', updateDonateAmount);
+
+function updateDonateAmount() {
+    for(let amount of donatedAmount) {
+        if (amount.checked === true) donateForm.anotherAmount.value = amount.id;
+    }
+}

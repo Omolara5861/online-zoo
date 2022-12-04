@@ -13,3 +13,14 @@ overlay.addEventListener('click', () => {
     mobile_menu.classList.toggle('is-active');
     overlay.classList.toggle('active')
 });
+
+
+const testimonials = document.querySelectorAll('.testimonial-item');
+
+for (let testimonial of testimonials) {
+    testimonial.onclick = e => {
+        if (e.target.classList.contains('testimonial-item')) {
+            console.log(e.target);
+        }
+    };
+}

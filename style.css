@@ -126,6 +126,19 @@ a {
     display:block;
 }
 
+.testimonial-popup {
+    position: relative;
+    width: 320px;
+    height: 428px;
+    padding: 20px 36px 17px 17px;
+}
+
+.testimonial-popup img{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
 .btn-rounded:active,
 .btn-square:active,
 .btn-light:active,

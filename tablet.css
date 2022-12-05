@@ -211,6 +211,10 @@ main .section5-wrapper .btn-container {
     margin-top: 40px;
 }
 
+footer .container {
+    max-width: 600px;
+}
+
 footer .desktop-footer {
     display: none;
 }

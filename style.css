@@ -34,6 +34,7 @@ body {
 
 header,
 main,
+section,
 footer {
     max-width: 100%;
 }
@@ -658,7 +659,6 @@ main .section4 .container h4 {
 }
 
 main .section4 .container p {
-    width: 870px;
     margin-bottom: 60px;
 }
 

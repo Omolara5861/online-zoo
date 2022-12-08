@@ -19,6 +19,7 @@ overlay.addEventListener('click', () => {
 
 //Pet Carousel Functionality
 import { petCollection as pets } from './pets.js';
+import { testimonials } from './testimonials.js';
 
 const sliderCards = document.querySelector(".slider__cards");
 const sliderArrowRight = document.querySelector(".slider__arrow_right");
@@ -35,16 +36,16 @@ let windowInnerWidth = window.innerWidth;
 
 let bgBlockControls = true;
 
-const startCardArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+const startCardArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let shuffleCardArray = [];
 let centrCardArray = [];
 let leftRightCardArray = [];
 let countStepCardArray = 6;
 
-// testimonialsInput.value = 0;
-// testimonialsInput.min = 0;
-// testimonialsInput.max = 7;
-// testimonialsInput.step = 1;
+testimonialsInput.value = 0;
+testimonialsInput.min = 0;
+testimonialsInput.max = 7;
+testimonialsInput.step = 1;
 
 let stapTransformTestimonials = 100 / 4;
 
@@ -60,23 +61,23 @@ function updateCountStepCardArray() {
 }
 updateCountStepCardArray();
 
-// function UpdateStapTransformTestimonials() {
-//     if (windowInnerWidth > 1280) {
-//         stapTransformTestimonials = 100 / 4;
-//     } else {
-//         stapTransformTestimonials = 100 / 3;
-//     }
-// }
-// UpdateStapTransformTestimonials();
+function UpdateStapTransformTestimonials() {
+    if (windowInnerWidth > 1280) {
+        stapTransformTestimonials = 100 / 4;
+    } else {
+        stapTransformTestimonials = 100 / 3;
+    }
+}
+UpdateStapTransformTestimonials();
 
-// function updatetesTimonialsInputMax() {
-//     if (windowInnerWidth > 1280) {
-//         testimonialsInput.max = 7;
-//     } else {
-//         testimonialsInput.max = 8;
-//     }
-// }
-// updatetesTimonialsInputMax();
+function updatetesTimonialsInputMax() {
+    if (windowInnerWidth > 1280) {
+        testimonialsInput.max = 7;
+    } else {
+        testimonialsInput.max = 8;
+    }
+}
+updatetesTimonialsInputMax();
 
 // Start from screen width number of cards
 window.addEventListener("resize", function() {
@@ -235,16 +236,108 @@ function createCard(id) {
 
 
 
+// START testimonials Slider
 
+let textPopupKeyHeight = 0
 
+testimonials.forEach((id, index, array) => {
+    testimonialsCards.append(createTestimonialCard(index));
+});
 
+function createTestimonialCard(id) {
+    let sliderTestimonialCard = document.createElement("div");
+    sliderTestimonialCard.classList.add("testimonials__card");
+    // sliderCards.append(sliderCard)
 
-const testimonials = document.querySelectorAll('.testimonial-item');
+    let testimonialsCardHeader = document.createElement("div");
+    testimonialsCardHeader.classList.add("testimonials__card__header");
+    sliderTestimonialCard.append(testimonialsCardHeader);
 
-for (let testimonial of testimonials) {
-    testimonial.onclick = e => {
-        if (e.target.classList.contains('testimonial-item')) {
-            console.log(e.target);
-        }
-    };
+    let imgTestimonialCard = document.createElement("img");
+    imgTestimonialCard.src = testimonials[id].logo;
+    testimonialsCardHeader.append(imgTestimonialCard);
+
+    let testimonialsCardHeaderWrapper = document.createElement("div");
+    testimonialsCardHeaderWrapper.classList.add(
+        "testimonials__card__header__wrapper"
+    );
+    testimonialsCardHeader.append(testimonialsCardHeaderWrapper);
+
+    let testimonialsName = document.createElement("div");
+    testimonialsName.classList.add("testimonials__name");
+    testimonialsName.textContent = testimonials[id].name;
+    testimonialsCardHeaderWrapper.append(testimonialsName);
+
+    let testimonialData = document.createElement("div");
+    testimonialData.classList.add("testimonial__data");
+    testimonialsCardHeaderWrapper.append(testimonialData);
+
+    let testimonialDataLocal = document.createElement("div");
+    testimonialDataLocal.classList.add("testimonial__data__local");
+    testimonialDataLocal.textContent = testimonials[id].location;
+    testimonialData.append(testimonialDataLocal);
+
+    let testimonialParagraf = document.createElement("p");
+    testimonialParagraf.textContent = "•";
+    testimonialData.append(testimonialParagraf);
+
+    let testimonialDataDate = document.createElement("div");
+    testimonialDataDate.classList.add("testimonial__data__date");
+    testimonialDataDate.textContent = testimonials[id].lastVisit;
+    testimonialData.append(testimonialDataDate);
+
+    let testimonialText = document.createElement("div");
+    testimonialText.classList.add("testimonial__text");
+
+    if (textPopupKeyHeight) {
+        testimonialText.classList.add("testimonial__text_popup");
+    }
+
+    testimonialText.textContent = testimonials[id].quote;
+    sliderTestimonialCard.append(testimonialText);
+
+    sliderTestimonialCard.id = testimonials[id].id
+
+    return sliderTestimonialCard;
 }
+
+const testimonialsCardsArray = testimonialsCards.childNodes
+const testimonialsPopup = document.querySelector('.testimonials-popup')
+const testimonialsPopupWrapper = document.querySelector('.testimonials-popup__wrapper')
+
+testimonialsCardsArray.forEach((child) => {
+    child.addEventListener('click', (e) => {
+        textPopupKeyHeight = 1
+        testimonialsPopup.classList.toggle('testimonials-popup_active')
+
+        let testimonialPopupCard = createTestimonialCard(child.id)
+        testimonialPopupCard.classList.add("testimonials__card_popup");
+
+        testimonialsPopupWrapper.prepend(testimonialPopupCard);
+    })
+})
+
+
+testimonialsInput.addEventListener("input", (e) => {
+    let stapTransform = e.target.value;
+    testimonialsCards.style.transform = `translateX(${-stapTransform * stapTransformTestimonials
+      }%)`;
+});
+
+
+const popupTestimonialsClicks = document.querySelector('.testimonials-popup_close_click');
+console.log(popupTestimonialsClicks)
+
+
+popupTestimonialsClicks.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('testimonials-popup_close_click')) {
+        console.log(e)
+        testimonialsPopupWrapper.removeChild(testimonialsPopupWrapper.firstChild)
+        testimonialsPopup.classList.remove('testimonials-popup_active')
+    }
+})
+
+// End testimonials Slider
+
+

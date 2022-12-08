@@ -605,6 +605,15 @@ main .slider_block .btn {
     margin-right: -20px;
     cursor: pointer;
 }
+.left-ellipse:hover {
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.right-ellipse:active,
+.left-ellipse:active {
+    background: var(--green);
+}
 
 .left-ellipse {
     position: absolute;
@@ -1068,7 +1077,9 @@ footer .designed-by a {
     left: 140px;
     transform: translateY(-42px);
     z-index: 5;
+    transition: all 0.2s linear 0s;
 }
+
 
 @media (max-width: 1599px) {
     .slider__arrow_left {
@@ -1096,6 +1107,7 @@ footer .designed-by a {
     right: 140px;
     transform: translateY(-42px);
     z-index: 5;
+    transition: all 0.2s linear 0s;
 }
 
 @media (max-width: 1599px) {
@@ -1116,6 +1128,20 @@ footer .designed-by a {
         right: 38%;
         transform: translateY(-10px);
     }
+}
+
+.slider__arrow_right:hover {
+    margin-right: -20px;
+    cursor: pointer;
+}
+.slider__arrow_left:hover {
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.slider__arrow_right:active,
+.slider__arrow_left:active {
+    background: var(--green);
 }
 
 .slider__wrapper_hidden {

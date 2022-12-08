@@ -25,14 +25,14 @@ export let petCollection = [{
     name: "TWO-TOED SLOTH",
     location: "Mesoamerica, South America",
     image: "/assets/images/sloth.png",
-    meal: "/assets/icons/banana-bamboo_icon.svg",
+    meal: "/assets/icons/meet-fish_icon.svg",
 },
 {
     id: `4`,
     name: "CHEETAHS",
     location: "Native to Africa",
     image: "/assets/images/cheetahs.png",
-    meal: "/assets/icons/meet-fish_icon.svg",
+    meal: "/assets/icons/banana-bamboo_icon.svg",
 },
 {
     id: `5`,
@@ -47,7 +47,7 @@ export let petCollection = [{
     name: "FOX",
     location: "all of Europe",
     image: "/assets/images/fox.jpg",
-    meal: "/assets/icons/meet-fish_icon.svg",
+    meal: "/assets/icons/banana-bamboo_icon.svg",
 },
 {
     id: `7`,
@@ -75,7 +75,7 @@ export let petCollection = [{
     name: "PUMA",
     location: "Native to America",
     image: "/assets/images/puma.jpg",
-    meal: "/assets/icons/meet-fish_icon.svg",
+    meal: "/assets/icons/banana-bamboo_icon.svg",
 },
 {
     id: `11`,
@@ -89,6 +89,6 @@ export let petCollection = [{
     name: "ALLIGATORS",
     location: "Native to Southeastern U.S.",
     image: "/assets/images/alligators.png",
-    meal: "/assets/icons/meet-fish_icon.svg",
+    meal: "/assets/icons/banana-bamboo_icon.svg",
 },
 ];

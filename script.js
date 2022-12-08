@@ -6,4 +6,3 @@ menu_btn.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-active');
 });
 
-alert(`Pls I'm still working on the task, kindly don't review yet. Thanks! :)`)

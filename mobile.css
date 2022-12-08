@@ -233,6 +233,7 @@ main .testimonial-item:nth-child(2) {
 }
 
 main .section5-wrapper .btn-container {
+    text-align: center;
     margin-top: 30px;
 }
 

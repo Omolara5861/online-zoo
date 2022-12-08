@@ -1174,22 +1174,13 @@ footer .designed-by a {
     cursor: pointer;
 }
 
-.slider__card:hover .slider__card__img {
-    display: none;
-}
-
 .slider__card:hover img {
     transform: scale(1.1);
-    z-index: 2;
 }
 
 .slider__card:hover .slider__card__wrapper {
     position: relative;
-    transform: translateY(-45px);
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    transform: translateY(-75px);
     color: white;
     z-index: 3;
 }
@@ -1198,7 +1189,7 @@ footer .designed-by a {
     position: absolute;
     left: 0;
     content: "";
-    background-color: rgb(75, 146, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     width: 366px;
     z-index: -1;
@@ -1252,30 +1243,9 @@ footer .designed-by a {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-    .slider__card__title {
-        font-size: 1.3em;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 120%;
-    }
-}
 
-.slider__card__description {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 120%;
-}
 
-@media (max-width: 768px) {
-    .slider__card__description {
-        font-size: 1.15rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 120%;
-    }
-}
+
 
 /* End Slider */
 

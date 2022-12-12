@@ -38,7 +38,7 @@ let bgBlockControls = true;
 
 const startCardArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let shuffleCardArray = [];
-let centrCardArray = [];
+let centerCardArray = [];
 let leftRightCardArray = [];
 let countStepCardArray = 6;
 
@@ -92,7 +92,7 @@ window.addEventListener("resize", function() {
     sliderCardsCenter.innerHTML = "";
     sliderCardsRight.innerHTML = "";
     startgenerareArraysCards();
-    addCardsFromArray(centrCardArray, addSliderCardsCenter);
+    addCardsFromArray(centerCardArray, addSliderCardsCenter);
     addCardsFromArray(leftRightCardArray, addSliderCardsLeftAndRight);
 });
 // End of screen width number of cards
@@ -112,7 +112,7 @@ function shuffle(array) {
 function startgenerareArraysCards(params) {
     shuffleCardArray = startCardArray.slice(0);
     shuffleCardArray = shuffle(shuffleCardArray);
-    centrCardArray = shuffleCardArray.splice(0, countStepCardArray);
+    centerCardArray = shuffleCardArray.splice(0, countStepCardArray);
     leftRightCardArray = shuffleCardArray.splice(0, countStepCardArray);
 }
 startgenerareArraysCards();
@@ -138,7 +138,7 @@ function addSliderCardsCenter(id) {
     sliderCardsCenter.append(createCard(id));
 }
 
-addCardsFromArray(centrCardArray, addSliderCardsCenter);
+addCardsFromArray(centerCardArray, addSliderCardsCenter);
 addCardsFromArray(leftRightCardArray, addSliderCardsLeftAndRight);
 
 // End of filling cards
@@ -168,11 +168,11 @@ sliderCards.addEventListener("transitionend", (e) => {
         sliderCards.style.transform = `translateX(${0}%)`;
 
         shuffleCardArray = Array.from(
-            new Set(shuffleCardArray.concat(centrCardArray))
+            new Set(shuffleCardArray.concat(centerCardArray))
         );
         shuffleCardArray = shuffle(shuffleCardArray);
 
-        centrCardArray = leftRightCardArray.slice(0);
+        centerCardArray = leftRightCardArray.slice(0);
         leftRightCardArray = shuffleCardArray.splice(0, countStepCardArray);
 
         sliderCardsLeft.innerHTML = "";

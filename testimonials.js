@@ -43,7 +43,7 @@ export let testimonials = [{
     name: "Marshall Branson",
     location: "SAR",
     lastVisit: "Yesterday",
-    quote: "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! 'Now fax quiz Jack!' my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig,",
+    quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore quo, sunt commodi praesentium earum eaque assumenda nam ratione hic officiis obcaecati, alias repudiandae incidunt, ipsa modi quisquam unde aut eius. Maiores blanditiis veniam odit voluptate quae obcaecati dolores nobis laboriosam iure minus, cupiditate quibusdam ipsum saepe libero debitis error soluta fugiat totam earum voluptas ad quos. Officiis quia unde modi dicta deleniti hic, quod fugit sequi natus cumque, laboriosam eum saepe quae eius voluptatum aliquam facere quas totam porro perspiciatis accusamus quam maiores quibusdam eveniet. Itaque neque quos quis perferendis, facilis eum dolor non saepe, iusto et obcaecati ex dignissimos provident? Natus, consectetur. Quisquam cupiditate optio eaque nemo impedit nulla quam, beatae numquam sequi maiores assumenda reiciendis et atque tempora error sed obcaecati quo quia voluptas vitae unde autem?",
     logo: "./assets/images/person2.png",
 },
 {
@@ -51,7 +51,7 @@ export let testimonials = [{
     name: "Fredericka Michelin",
     location: "Local Austria",
     lastVisit: "Yesterday",
-    quote: "The best online zoo I’ve met. The best online zoo I’ve met. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.",
+    quote: "The best online zoo I’ve met. The best online zoo I’ve met. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. Ullam labore, error architecto sapiente nam quisquam aperiam doloremque temporibus molestiae asperiores iusto, consequuntur ut? Aspernatur iure ex natus, quam molestias, nostrum optio doloribus architecto, vitae dolor quaerat quae laboriosam numquam dignissimos laudantium eum quas id voluptate nesciunt minus! Fugiat est pariatur soluta aliquam quaerat eum illo esse adipisci. Veniam perspiciatis eius beatae architecto ratione officiis qui quaerat ea fugiat nobis nihil maiores debitis corrupti vero blanditiis, asperiores quasi accusantium!",
     logo: "./assets/images/person3.png",
 },
 {

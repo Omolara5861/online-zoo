@@ -38,7 +38,7 @@ let bgBlockControls = true;
 
 const startCardArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let shuffleCardArray = [];
-let centerCardArray = [];
+let centrCardArray = [];
 let leftRightCardArray = [];
 let countStepCardArray = 6;
 
@@ -49,7 +49,7 @@ testimonialsInput.step = 1;
 
 let stapTransformTestimonials = 100 / 4;
 
-function updateCountStepCardArray() {
+const updateCountStepCardArray =() => {
     if (windowInnerWidth >= 1000) {
         countStepCardArray = 6;
     } else if (windowInnerWidth > 630 && windowInnerWidth < 1000) {
@@ -57,11 +57,10 @@ function updateCountStepCardArray() {
     } else {
         countStepCardArray = 2;
     }
-    // return countStepCardArray;
 }
 updateCountStepCardArray();
 
-function UpdateStapTransformTestimonials() {
+const UpdateStapTransformTestimonials = () => {
     if (windowInnerWidth > 1280) {
         stapTransformTestimonials = 100 / 4;
     } else {
@@ -92,7 +91,7 @@ window.addEventListener("resize", function() {
     sliderCardsCenter.innerHTML = "";
     sliderCardsRight.innerHTML = "";
     startgenerareArraysCards();
-    addCardsFromArray(centerCardArray, addSliderCardsCenter);
+    addCardsFromArray(centrCardArray, addSliderCardsCenter);
     addCardsFromArray(leftRightCardArray, addSliderCardsLeftAndRight);
 });
 // End of screen width number of cards
@@ -112,7 +111,7 @@ function shuffle(array) {
 function startgenerareArraysCards(params) {
     shuffleCardArray = startCardArray.slice(0);
     shuffleCardArray = shuffle(shuffleCardArray);
-    centerCardArray = shuffleCardArray.splice(0, countStepCardArray);
+    centrCardArray = shuffleCardArray.splice(0, countStepCardArray);
     leftRightCardArray = shuffleCardArray.splice(0, countStepCardArray);
 }
 startgenerareArraysCards();
@@ -138,7 +137,7 @@ function addSliderCardsCenter(id) {
     sliderCardsCenter.append(createCard(id));
 }
 
-addCardsFromArray(centerCardArray, addSliderCardsCenter);
+addCardsFromArray(centrCardArray, addSliderCardsCenter);
 addCardsFromArray(leftRightCardArray, addSliderCardsLeftAndRight);
 
 // End of filling cards
@@ -168,11 +167,11 @@ sliderCards.addEventListener("transitionend", (e) => {
         sliderCards.style.transform = `translateX(${0}%)`;
 
         shuffleCardArray = Array.from(
-            new Set(shuffleCardArray.concat(centerCardArray))
+            new Set(shuffleCardArray.concat(centrCardArray))
         );
         shuffleCardArray = shuffle(shuffleCardArray);
 
-        centerCardArray = leftRightCardArray.slice(0);
+        centrCardArray = leftRightCardArray.slice(0);
         leftRightCardArray = shuffleCardArray.splice(0, countStepCardArray);
 
         sliderCardsLeft.innerHTML = "";
